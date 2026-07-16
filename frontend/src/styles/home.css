@@ -1,0 +1,21 @@
+.course-card{
+
+    width:280px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin:20px;
+
+}
+
+.course-card img{
+
+    width:100%;
+
+    border-radius:8px;
+
+}

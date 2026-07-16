@@ -3,7 +3,7 @@ const User = require("../models/User");
 const asyncHandler = require("../handlers/asyncHandler");
 
 const authMiddleware = asyncHandler(async (req, res, next) => {
-    // const token = req.cookies?.token;
+    
     const token = req.cookies?.token || req.headers.authorization?.split(" ")[1];
 
     if (!token) {

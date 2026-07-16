@@ -1,8 +1,6 @@
 const express = require("express");
 
-const {
-    streamLectureVideo,
-} = require("../controllers/videoController");
+const {streamLectureVideo} = require("../controllers/videoController");
 
 const authMiddleware = require("../middlewares/authMiddleware");
 

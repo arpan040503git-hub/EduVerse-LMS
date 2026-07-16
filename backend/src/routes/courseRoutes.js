@@ -12,15 +12,8 @@ const {
 } = require("../controllers/courseController");
 
 const authMiddleware = require("../middlewares/authMiddleware");
-
-const {
-    isInstructorOrAdmin,
-} = require("../middlewares/roleMiddleware");
-
-const {
-    validateUpdateCourse,
-} = require("../validators/courseValidator");
-
+const {isInstructorOrAdmin} = require("../middlewares/roleMiddleware");
+const {validateUpdateCourse} = require("../validators/courseValidator");
 const upload = require("../middlewares/uploadMiddleware");
 
 const router = express.Router();

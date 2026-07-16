@@ -8,14 +8,8 @@ const {
 } = require("../controllers/sectionController");
 
 const authMiddleware = require("../middlewares/authMiddleware");
-
-const {
-    isInstructorOrAdmin,
-} = require("../middlewares/roleMiddleware");
-
-const {
-    validateSection,
-} = require("../validators/sectionValidator");
+const {isInstructorOrAdmin} = require("../middlewares/roleMiddleware");
+const {validateSection} = require("../validators/sectionValidator");
 
 const router = express.Router();
 

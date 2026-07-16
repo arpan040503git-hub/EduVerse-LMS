@@ -16,12 +16,8 @@ const findOwnedCourse = async (courseId, userId) => {
     }
 
     if (course.instructor.toString() !== userId.toString()) {
-        throw new ApiError(
-            403,
-            "You are not authorized to access this course."
-        );
+        throw new ApiError(403,"You are not authorized to access this course.");
     }
-
     return course;
 };
 
